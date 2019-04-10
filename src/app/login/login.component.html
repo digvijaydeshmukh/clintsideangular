@@ -1,0 +1,14 @@
+ 
+
+  <!-- Modal Content -->
+  <form  #userform="ngForm"  (ngSubmit)="save(userform.value,userform)" class="modal-content animate">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" name=email  [(ngModel)]=userform.email placeholder="Enter Username"  required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" name="password" [(ngModel)]=password placeholder="Enter Password" required>
+
+      <button type="submit" >Login</button>
+    </div>
+  </form>
